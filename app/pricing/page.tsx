@@ -54,10 +54,10 @@ const page = () => {
         {/* Second card */}
         <div className="bg-white rounded-lg shadow-lg w-full md:w-[calc(50%-0.5rem)] lg:w-auto lg:flex-1">
           <div className="bg-green-500 text-white text-center p-4 rounded-t-lg">
-        STANDARD
+            STANDARD
           </div>
           <div className="text-center bg-green-600 text-5xl text-white py-4">
-           2,800
+            2,800
             <br />
             <span className="text-xl">Birr</span>
           </div>
@@ -65,13 +65,17 @@ const page = () => {
             10 job submission
           </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-4 text-gray-500">3 months membership</div>
+          <div className="text-center py-4 text-gray-500">
+            3 months membership
+          </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-5 text-gray-500">1 featured job on homepage</div>
+          <div className="text-center py-5 text-gray-500">
+            1 featured job on homepage
+          </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-10 text-gray-500"> 
-
-1Free submission </div>
+          <div className="text-center py-10 text-gray-500">
+            1Free submission{" "}
+          </div>
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
             <Link
@@ -86,7 +90,7 @@ const page = () => {
         {/* Third card */}
         <div className="bg-white rounded-lg shadow-lg w-full md:w-[calc(50%-0.5rem)] lg:w-auto lg:flex-1">
           <div className="bg-orange-400 text-white text-center p-4 rounded-t-lg">
-          GOLDEN
+            GOLDEN
           </div>
           <div className="text-center bg-orange-500 text-5xl text-white py-4">
             9,800
@@ -97,12 +101,17 @@ const page = () => {
             50 job submission
           </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-4 text-gray-500">1 year membership</div>
+          <div className="text-center py-4 text-gray-500">
+            1 year membership
+          </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-5 text-gray-500">1 featured job on homepage every month</div>
+          <div className="text-center py-5 text-gray-500">
+            1 featured job on homepage every month
+          </div>
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
-1Free submission </div>
+            1Free submission{" "}
+          </div>
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
             <Link
@@ -117,10 +126,10 @@ const page = () => {
         {/* Fourth card */}
         <div className="bg-white rounded-lg shadow-lg w-full md:w-[calc(50%-0.5rem)] lg:w-auto lg:flex-1">
           <div className="bg-red-400 text-white text-center p-4 rounded-t-lg">
-      PREMIUM
+            PREMIUM
           </div>
           <div className="text-center bg-red-600 text-5xl text-white py-4">
-         14,800
+            14,800
             <br />
             <span className="text-xl">Birr</span>
           </div>
@@ -128,11 +137,17 @@ const page = () => {
             unlimited job submission
           </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-4 text-gray-500">one year membership</div>
+          <div className="text-center py-4 text-gray-500">
+            one year membership
+          </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-5 text-gray-500">2 featured job on homepage every month </div>
+          <div className="text-center py-5 text-gray-500">
+            2 featured job on homepage every month{" "}
+          </div>
           <hr className="border-gray-300 border-t-1" />
-          <div className="text-center py-10 text-gray-500">1 free submission</div>
+          <div className="text-center py-10 text-gray-500">
+            1 free submission
+          </div>
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
             <Link
