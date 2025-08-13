@@ -74,7 +74,7 @@ export default function Header() {
           >
             Contact Us
           </Link>
-            <Link
+          <Link
             href="/pricing"
             onClick={() => setIsMenuOpen(false)}
             className={`px-4 py-2 hover:text-blue-600 ${
@@ -82,6 +82,15 @@ export default function Header() {
             }`}
           >
             Pricing
+          </Link>
+          <Link
+            href="/scolarships"
+            onClick={() => setIsMenuOpen(false)}
+            className={`px-4 py-2 hover:text-blue-600 ${
+              isActive("/scolarships") ? "text-blue-600 font-medium" : ""
+            }`}
+          >
+            scholarship
           </Link>
         </nav>
       </div>

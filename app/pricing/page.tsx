@@ -43,7 +43,7 @@ const page = () => {
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
             <Link
-              href="/job-submition"
+              href="/jobSubmition"
               className="text-white shadow-2xl bg-blue-500 rounded-xl mx-auto text-center px-9 hover:bg-blue-600 py-3"
             >
               submit job
@@ -79,7 +79,7 @@ const page = () => {
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
             <Link
-              href="/job-submition"
+              href="/jobSubmition"
               className="text-white shadow-2xl bg-green-500 rounded-xl mx-auto text-center px-9 hover:bg-green-600 py-3"
             >
               submit job
@@ -115,7 +115,7 @@ const page = () => {
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
             <Link
-              href="/job-submition"
+              href="/jobSubmition"
               className="text-white shadow-2xl bg-orange-400 rounded-xl mx-auto text-center px-9 hover:bg-orange-500 py-3"
             >
               submit job
@@ -151,7 +151,7 @@ const page = () => {
           <hr className="border-gray-300 border-t-1" />
           <div className="text-center py-10 text-gray-500">
             <Link
-              href="/job-submition"
+              href="/jobSubmition"
               className="text-white shadow-2xl bg-red-400 rounded-xl mx-auto text-center px-9 hover:bg-red-600 py-3"
             >
               submit job

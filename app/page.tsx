@@ -1,5 +1,6 @@
-
-import About from "@/app/about"
+import Search from "./search/page";
+import Homee from "./home/seniorExpert/page";
+import About from "./about/page";
 export default function Home() {
   return (
     <div className="container mx-auto">
@@ -7,10 +8,10 @@ export default function Home() {
         Zemenay ad Provides fresh and updated Ethiojobs vacancies. we list fresh
         graduate jobs in Ethiopia, Job vacancy in Ethiopia and more. Visit our
         site now!
-
       </p>
-<h1 className="text-center font-bold text-3xl mt-6">Search Job</h1>
-<About/>
+      <Homee />
+      <Search />
+      <About />
     </div>
   );
 }

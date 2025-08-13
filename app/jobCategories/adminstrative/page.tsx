@@ -18,6 +18,7 @@ const adminstrative = () => {
         application and great resources for career advancement and job
         placement.
       </p>
+
       <div className="p-4">
         <label htmlFor="sort" className="block text-lg font-medium mb-2">
           Sort By

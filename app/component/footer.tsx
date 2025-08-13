@@ -6,15 +6,44 @@ import Link from "next/link";
 const footer = () => {
   return (
     <div className="text-white justify-center items-center bg-gray-600 p-4">
- 
       <div className="flex flex-wrap justify-center gap-4 mb-6">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contactUs">Contact us</Link>
-        <Link href="/pricing">pricing</Link>
+        <Link
+          href="/"
+          className="px-4 py-2 text-white hover:text-blue-300 transition-colors duration-200 w-1/2 sm:w-1/2 md:w-1/3 lg:w-auto text-center"
+        >
+          Home
+        </Link>
+        <Link
+          href="/about"
+          className="px-4 py-2 text-white hover:text-blue-300 transition-colors duration-200 w-1/2 sm:w-1/2 md:w-1/3 lg:w-auto text-center"
+        >
+          About
+        </Link>
+        <Link
+          href="/scolarships"
+          className="px-4 py-2 text-white hover:text-blue-300 transition-colors duration-200 w-1/2 sm:w-1/2 md:w-1/3 lg:w-auto text-center"
+        >
+          Scholarships
+        </Link>
+        <Link
+          href="/contactUs"
+          className="px-4 py-2 text-white hover:text-blue-300 transition-colors duration-200 w-1/2 sm:w-1/2 md:w-1/3 lg:w-auto text-center"
+        >
+          Contact Us
+        </Link>
+        <Link
+          href="/pricing"
+          className="px-4 py-2 text-white hover:text-blue-300 transition-colors duration-200 w-1/2 sm:w-1/2 md:w-1/3 lg:w-auto text-center"
+        >
+          Pricing
+        </Link>
+        <Link
+          href="/privacy"
+          className="px-4 py-2 text-white hover:text-blue-300 transition-colors duration-200 w-1/2 sm:w-1/2 md:w-1/3 lg:w-auto text-center"
+        >
+          Privacy Policy
+        </Link>
       </div>
-
-   
       <div className="mb-8">
         <h1 className="text-xl text-center  font-bold mb-4">job categories</h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-4">
@@ -36,7 +65,7 @@ const footer = () => {
           <Link href="/jobCategories/engineeringJob">Engineering</Link>
           <Link href="/jobCategories/freshGraduates">Fresh Graduates</Link>
           <Link href="/jobCategories/generals">Generals</Link>
-          <Link href="/jobCategories/hotel-tourism">Hotel & Tourism</Link>
+          <Link href="/jobCategories/hoteltourism">Hotel & Tourism</Link>
           <Link href="/jobCategories/humanResource">Human Resource</Link>
           <Link href="/jobCategories/ict-computer-science">
             ICT & Computer Science
@@ -45,7 +74,7 @@ const footer = () => {
           <Link href="/jobCategories/managmentbussinesAdministrative">
             Management & Business Administrative
           </Link>
-          <Link href="/jobCategories/medical-health">Medical & Health</Link>
+          <Link href="/jobCategories/medicalhealth">Medical & Health</Link>
           <Link href="/jobCategories/ngo">NGO</Link>
           <Link href="/jobCategories/non-clericalOffice">
             Non-Clerical Office
@@ -62,7 +91,6 @@ const footer = () => {
         </div>
       </div>
 
-     
       <div className="flex gap-4 justify-center items-center mb-4">
         <div className="rounded-full flex h-10 w-10 justify-center items-center hover:bg-blue-600 transition-colors duration-200">
           <Link href="https://t.me/zemenayad">
