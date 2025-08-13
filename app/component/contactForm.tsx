@@ -33,7 +33,6 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Replace with your actual form submission logic
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setSubmitMessage("Your message has been sent successfully!");
       setFormData({
