@@ -2,12 +2,18 @@
 import Image from "next/image";
 import { useState } from "react";
 
+interface JobResult {
+  id: number;
+  title: string;
+  description: string;
+}
+
 export default function Search() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [searchResults, setSearchResults] = useState<JobResult[]>([]);
 
   const handleSearch = () => {
-    const results = [
+    const results: JobResult[] = [
       { id: 1, title: "Job Title 1", description: "Description for job 1" },
       { id: 2, title: "Job Title 2", description: "Description for job 2" },
     ];
@@ -45,7 +51,7 @@ export default function Search() {
             />
           </button>
         </div>
-        <div className="flex justify-between ">
+        <div className="flex justify-between">
           <div className="p-4">
             <label htmlFor="sort" className="block text-lg font-medium mb-2">
               Job Type
@@ -120,7 +126,7 @@ export default function Search() {
           ) : (
             searchTerm && (
               <p className="text-center text-gray-500 mt-4">
-                No results found for "{searchTerm}"
+                No results found for &quot;{searchTerm}&quot;
               </p>
             )
           )}

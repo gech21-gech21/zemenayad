@@ -1,4 +1,4 @@
-"use client"; // components/ContactForm.tsx
+"use client";
 import { useState } from "react";
 
 type FormData = {
@@ -33,7 +33,17 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
+      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      // In a real app, you would call your API here
+      // const response = await fetch('/api/contact', {
+      //   method: 'POST',
+      //   body: JSON.stringify(formData),
+      //   headers: { 'Content-Type': 'application/json' }
+      // });
+      // if (!response.ok) throw new Error('Failed to send message');
+
       setSubmitMessage("Your message has been sent successfully!");
       setFormData({
         name: "",
@@ -42,7 +52,12 @@ const ContactForm = () => {
         message: "",
       });
     } catch (error) {
-      setSubmitMessage("Failed to send message. Please try again.");
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Failed to send message. Please try again.";
+      setSubmitMessage(message);
+      console.error("Contact form submission error:", error);
     } finally {
       setIsSubmitting(false);
       setTimeout(() => setSubmitMessage(""), 5000);
@@ -142,7 +157,7 @@ const ContactForm = () => {
               rows={5}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Your message here..."
-            ></textarea>
+            />
           </div>
 
           <div>
@@ -168,12 +183,12 @@ const ContactForm = () => {
                       r="10"
                       stroke="currentColor"
                       strokeWidth="4"
-                    ></circle>
+                    />
                     <path
                       className="opacity-75"
                       fill="currentColor"
                       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                    ></path>
+                    />
                   </svg>
                   Sending...
                 </span>
